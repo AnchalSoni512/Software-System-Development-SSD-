@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>About</title>
+    <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--     w3.css file import -->
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- import the webpage's javascript file -->
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="w3-top">
+        <div class="w3-row w3-padding w3-purple">
+          <div class="w3-col s3">
+            <a
+              href="index.html"
+              class="w3-button w3-block w3-bisque"
+              >ABOUT ME</a
+            >
+          </div>
+          <div class="w3-col s3">
+            <a href="resume.html" class="w3-button w3-block w3-bisque"
+              >RESUME</a
+            >
+          </div>
+          <div class="w3-col s3">
+            <a href="activities.html" class="w3-button w3-block w3-bisque"
+              >ACTIVITIES</a
+            >
+          </div>
+          <div class="w3-col s3">
+            <a href="contact.html" class="w3-button w3-block w3-bisque"
+              >CONTACT</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="logo">
+          <img
+            alt="logo"
+            src="https://cdn.glitch.com/08d9be8d-e639-4bb5-af34-71a147b6a7c0%2F1063694-Anchal.gif?v=1601495834068"
+          />
+        </div>
+        <!--         <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul> -->
+      </div>
+      <div class="title">
+        <h1>
+          <b>Say hii!</b>
+        </h1>
+      </div>
+    </header>
+    <div class="container">
+      <div id="error"></div>
+      <form
+        name="myForm"
+        action="/action_page.php"
+        onsubmit="return validateForm()"
+        method="post"
+      >
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name.."
+          required
+        />
+
+        <label for="email">Email</label><br />
+        <input
+          type="text"
+          id="email"
+          name="email"
+        />
+        <br /><br />
+        <label for="message">Your message/Feedback</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write here.."
+          style="height:200px"
+          required
+        ></textarea>
+        
+        <label>Rate my website between 1 to 10</label><br />
+        <input id="numb" />
+        <button type="button" onclick="myFunction()">check</button>
+        <p id="demo"></p>
+
+        <!--         <input type="Submit" value="Send"/> -->
+        <input type="submit" value="send" onsubmit="return validateForm()" />
+        <!--        <button type="submit" onclick="dosomething()">Send</button> -->
+      </form>
+    </div>
+    <footer class="w3-container w3-black w3-center w3-opacity w3-padding-44">
+      <h1 class="w3-margin w3-xlarge">Because connections matter</h1>
+      <div class="w3-xlarge w3-padding-32">
+        <a href="https://www.facebook.com/anchal.soni.9883"
+          ><span><i class="fa fa-facebook-official w3-hover-opacity"></i></span
+        ></a>
+        <a href="https://www.instagram.com/anchal_soni98"
+          ><span><i class="fa fa-instagram w3-hover-opacity"></i></span
+        ></a>
+        <a href="https://in.pinterest.com/sonianchal512"
+          ><span><i class="fa fa-pinterest-p w3-hover-opacity"></i></span
+        ></a>
+        <a href="https://www.facebook.com/anchal.soni.9883"
+          ><span> <i class="fa fa-twitter w3-hover-opacity"></i></span
+        ></a>
+        <a href="https://www.linkedin.com/in/anchal-soni-3b2451171/"
+          ><span> <i class="fa fa-linkedin w3-hover-opacity"></i></span
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
